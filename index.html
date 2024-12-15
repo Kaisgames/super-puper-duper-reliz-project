@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Дилерський центр Mazda</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link rel="stylesheet" href="styles/main.css">
+</head>
+<body>
+    <nav>
+        <div class="logo">
+            <img src="images/mazda-logo.png" alt="Mazda Logo">
+        </div>
+        <div class="nav-links">
+            <a href="#models">Моделі</a>
+            <a href="#contacts">Контакти</a>
+            <a href="#" onclick="openMyOrders(); return false;">Мої замовлення</a>
+        </div>
+    </nav>
+
+    <main>
+        <section class="hero">
+            <h1>Відкрийте для себе Mazda</h1>
+            <p>Інноваційний дизайн, передові технології та неперевершене задоволення від керування</p>
+        </section>
+
+        <section id="models" class="models">
+            <h2>Модельний ряд</h2>
+            <div class="model-grid">
+                <div class="model-card">
+                    <img src="images/mazda2.jpg" alt="Mazda 2" style="width: 100%; margin-bottom: 1rem;">
+                    <h3>Mazda 2</h3>
+                    <p>Від 799 000 ₴</p>
+                    <div class="card-buttons">
+                        <a href="#" class="details-button">Детальніше</a>
+                        <button class="order-button" onclick="openOrderModal('Mazda 2', '799 000 ₴', 'images/mazda2.jpg')">Замовити</button>
+                    </div>
+                </div>
+                <div class="model-card">
+                    <img src="images/mazda3.jpg" alt="Mazda 3" style="width: 100%; margin-bottom: 1rem;">
+                    <h3>Mazda 3</h3>
+                    <p>Від 899 000 ₴</p>
+                    <div class="card-buttons">
+                        <a href="#" class="details-button">Детальніше</a>
+                        <button class="order-button" onclick="openOrderModal('Mazda 3', '899 000 ₴', 'images/mazda3.jpg')">Замовити</button>
+                    </div>
+                </div>
+                <div class="model-card">
+                    <img src="images/mazda6.jpg" alt="Mazda 6" style="width: 100%; margin-bottom: 1rem;">
+                    <h3>Mazda 6</h3>
+                    <p>Від 999 000 ₴</p>
+                    <div class="card-buttons">
+                        <a href="#" class="details-button">Детальніше</a>
+                        <button class="order-button" onclick="openOrderModal('Mazda 6', '999 000 ₴', 'images/mazda6.jpg')">Замовити</button>
+                    </div>
+                </div>
+                <div class="model-card">
+                    <img src="images/mazda-cx30.jpg" alt="Mazda CX-30" style="width: 100%; margin-bottom: 1rem;">
+                    <h3>Mazda CX-30</h3>
+                    <p>Від 1 099 000 ₴</p>
+                    <div class="card-buttons">
+                        <a href="#" class="details-button">Детальніше</a>
+                        <button class="order-button" onclick="openOrderModal('Mazda CX-30', '1 099 000 ₴', 'images/mazda-cx30.jpg')">Замовити</button>
+                    </div>
+                </div>
+                <div class="model-card">
+                    <img src="images/mazda-cx5.jpg" alt="Mazda CX-5" style="width: 100%; margin-bottom: 1rem;">
+                    <h3>Mazda CX-5</h3>
+                    <p>Від 1 299 000 ₴</p>
+                    <div class="card-buttons">
+                        <a href="#" class="details-button">Детальніше</a>
+                        <button class="order-button" onclick="openOrderModal('Mazda CX-5', '1 299 000 ₴', 'images/mazda-cx5.jpg')">Замовити</button>
+                    </div>
+                </div>
+                <div class="model-card">
+                    <img src="images/mazda-cx9.jpg" alt="Mazda CX-9" style="width: 100%; margin-bottom: 1rem;">
+                    <h3>Mazda CX-9</h3>
+                    <p>Від 1 599 000 ₴</p>
+                    <div class="card-buttons">
+                        <a href="#" class="details-button">Детальніше</a>
+                        <button class="order-button" onclick="openOrderModal('Mazda CX-9', '1 599 000 ₴', 'images/mazda-cx9.jpg')">Замовити</button>
+                    </div>
+                </div>
+                <div class="model-card">
+                    <img src="images/mazda-cx60.jpg" alt="Mazda CX-60" style="width: 100%; margin-bottom: 1rem;">
+                    <h3>Mazda CX-60</h3>
+                    <p>Від 1 699 000 ₴</p>
+                    <div class="card-buttons">
+                        <a href="#" class="details-button">Детальніше</a>
+                        <button class="order-button" onclick="openOrderModal('Mazda CX-60', '1 699 000 ₴', 'images/mazda-cx60.jpg')">Замовити</button>
+                    </div>
+                </div>
+                <div class="model-card">
+                    <img src="images/mazda-mx5.jpg" alt="Mazda MX-5" style="width: 100%; margin-bottom: 1rem;">
+                    <h3>Mazda MX-5</h3>
+                    <p>Від 1 499 000 ₴</p>
+                    <div class="card-buttons">
+                        <a href="#" class="details-button">Детальніше</a>
+                        <button class="order-button" onclick="openOrderModal('Mazda MX-5', '1 499 000 ₴', 'images/mazda-mx5.jpg')">Замовити</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="contacts" class="contacts">
+            <h2>Контакти</h2>
+            <div class="contact-info">
+                <div>
+                    <h3><i class="fas fa-map-marker-alt"></i> Адреса</h3>
+                    <p>вул. Автомобільна, 123</p>
+                    <p>Київ, 01001</p>
+                </div>
+                <div>
+                    <h3><i class="fas fa-phone"></i> Телефон</h3>
+                    <p>+380 44 123 45 67</p>
+                </div>
+                <div>
+                    <h3><i class="fas fa-envelope"></i> Email</h3>
+                    <p>info@mazda-dealer.ua</p>
+                </div>
+                <div>
+                    <h3><i class="fas fa-clock"></i> Години роботи</h3>
+                    <p>Пн-Пт: 9:00 - 19:00</p>
+                    <p>Сб: 10:00 - 17:00</p>
+                    <p>Нд: Вихідний</p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Дилерський центр Mazda</p>
+    </footer>
+
+    <!-- Модальне вікно замовлення -->
+    <div id="orderModal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <div class="order-details">
+                <img id="carImage" src="" alt="Car Image">
+                <h2 id="carModel"></h2>
+                <p id="carPrice"></p>
+            </div>
+            <form id="orderForm">
+                <div class="form-group">
+                    <label for="name">Ваше ім'я:</label>
+                    <input type="text" id="name" required>
+                </div>
+                <div class="form-group">
+                    <label for="phone">Телефон:</label>
+                    <input type="tel" id="phone" required>
+                </div>
+                <div class="form-group">
+                    <label for="color">Колір автомобіля:</label>
+                    <select id="color" required>
+                        <option value="Soul Red Crystal">Soul Red Crystal</option>
+                        <option value="Machine Gray">Machine Gray</option>
+                        <option value="Deep Crystal Blue">Deep Crystal Blue</option>
+                        <option value="Snowflake White Pearl">Snowflake White Pearl</option>
+                        <option value="Jet Black">Jet Black</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label>Додаткові опції:</label>
+                    <div class="checkbox-group">
+                        <label>
+                            <input type="checkbox" name="options" value="leather">
+                            Шкіряний салон
+                        </label>
+                        <label>
+                            <input type="checkbox" name="options" value="sunroof">
+                            Панорамний дах
+                        </label>
+                        <label>
+                            <input type="checkbox" name="options" value="premium_audio">
+                            Преміум аудіосистема
+                        </label>
+                        <label>
+                            <input type="checkbox" name="options" value="navigation">
+                            Навігаційна система
+                        </label>
+                    </div>
+                </div>
+                <button type="submit" class="order-button">Оформити замовлення</button>
+            </form>
+        </div>
+    </div>
+
+    <!-- Модальне вікно "Мої замовлення" -->
+    <div id="myOrdersModal" class="modal">
+        <div class="modal-content orders-content">
+            <span class="close">&times;</span>
+            <h2>Мої замовлення</h2>
+            <div id="ordersList" class="orders-list">
+                <!-- Список замовлень буде додано через JavaScript -->
+            </div>
+        </div>
+    </div>
+
+    <!-- Модальне вікно деталей автомобіля -->
+    <div id="detailsModal" class="modal">
+        <div class="modal-content details-content">
+            <span class="close">&times;</span>
+            <div class="car-details">
+                <div class="car-gallery">
+                    <img id="detailsImage" src="" alt="Car Image" class="main-image">
+                </div>
+                <div class="car-info">
+                    <h2 id="detailsModel"></h2>
+                    <p id="detailsPrice" class="price"></p>
+                    <div class="specs">
+                        <h3>Характеристики:</h3>
+                        <div class="specs-grid">
+                            <div class="spec-item">
+                                <i class="fas fa-tachometer-alt"></i>
+                                <span>Двигун</span>
+                                <p id="detailsEngine"></p>
+                            </div>
+                            <div class="spec-item">
+                                <i class="fas fa-horse-head"></i>
+                                <span>Потужність</span>
+                                <p id="detailsPower"></p>
+                            </div>
+                            <div class="spec-item">
+                                <i class="fas fa-gas-pump"></i>
+                                <span>Витрата палива</span>
+                                <p id="detailsFuel"></p>
+                            </div>
+                            <div class="spec-item">
+                                <i class="fas fa-tachometer-alt"></i>
+                                <span>Розгін 0-100</span>
+                                <p id="detailsAcceleration"></p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="features">
+                        <h3>Стандартне обладнання:</h3>
+                        <ul id="detailsFeatures" class="features-list">
+                        </ul>
+                    </div>
+                    <button class="order-button" id="detailsOrderButton">Замовити</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="js/main.js"></script>
+</body>
+</html> 
